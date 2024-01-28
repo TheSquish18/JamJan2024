@@ -22,6 +22,7 @@ public class LobsterScript : MonoBehaviour
         pastaSprite = transform.GetChild(1).GetComponent<SpriteRenderer>().sprite;
         Cursor.visible = false;
         StartCoroutine(heatTheWater());
+        StartCoroutine(countDown());
     }
 
     void Update()
@@ -60,7 +61,7 @@ public class LobsterScript : MonoBehaviour
     IEnumerator win()
     {
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("Sacabambaspis");
+        SceneManager.LoadScene("Gopher");
     }
 
     /*private void OnCollisionEnter2D(Collision2D collision)
@@ -76,6 +77,11 @@ public class LobsterScript : MonoBehaviour
     public void winEffect(){
         GetComponent<SpriteRenderer>().sprite = pastaSprite;
         StartCoroutine(win());
+    }
+
+    IEnumerator countDown(){
+        yield return new WaitForSeconds(60);
+        SceneManager.LoadScene("Gopher");
     }
 
 }

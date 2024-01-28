@@ -10,6 +10,7 @@ public class SacaScriptParent : MonoBehaviour
     void Start()
     {
         StartCoroutine(countDown());
+        cursor.visible = true;
     }
 
     void Update()

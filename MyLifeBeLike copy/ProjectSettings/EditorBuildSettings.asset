@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 756c180046abdab4b93558406470eaf4
+  - enabled: 1
+    path: Assets/Scenes/Cow.unity
+    guid: 93dc68c433a5c42309f253810db6aaaf
   m_configObjects: {}

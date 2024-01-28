@@ -15,6 +15,7 @@ public class CowScript : MonoBehaviour
         GetComponent<BoxCollider2D>().enabled = false;
         StartCoroutine(firstAd());
         StartCoroutine(countDown());
+        cursor.visible = true;
     }
 
     void Update()

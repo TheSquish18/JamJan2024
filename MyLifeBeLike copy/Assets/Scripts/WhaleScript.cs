@@ -39,6 +39,7 @@ public class WhaleScript : MonoBehaviour
     {
         L = leftmostWhale.transform.position.x;
         R = rightmostWhale.transform.position.x;
+        StartCoroutine(countDown());
     }
 
     void Update()
@@ -105,7 +106,7 @@ public class WhaleScript : MonoBehaviour
 
         if (follow == true)
         {
-            transform.position = new Vector3(transform.position.x + (Input.mousePosition.x-mousePos)/20000, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x + (Input.mousePosition.x-mousePos)/8000, transform.position.y, transform.position.z);
         }
     }
 
@@ -122,6 +123,11 @@ public class WhaleScript : MonoBehaviour
     IEnumerator win()
     {
         yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Lobster");
+    }
+
+    IEnumerator countDown(){
+        yield return new WaitForSeconds(70);
         SceneManager.LoadScene("Lobster");
     }
 }
