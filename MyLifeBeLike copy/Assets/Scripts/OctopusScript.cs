@@ -9,8 +9,8 @@ public class OctopusScript : MonoBehaviour
     private bool follow = false;
     private bool test = false;
     private string tentacleName;
-    //public AudioSource sockNoise;
-    //public AudioSource errorNoise; ??
+    public AudioSource pickupNoise;
+    public AudioSource dropNoise;
     private Vector3 ogPosition;
     private bool tentacleChecked = false;
     private bool win = false;
@@ -34,7 +34,7 @@ public class OctopusScript : MonoBehaviour
         {
             if (name == tentacleName)
             {
-                //sockNoise.Play();
+                dropNoise.Play();
                 if(tentacleChecked == false)
                 {
                     ConstantStorgae.octopusTentacleCheck++;
@@ -43,7 +43,6 @@ public class OctopusScript : MonoBehaviour
             }
             else
             {
-                //errorNoise.Play();
                 transform.position = ogPosition;
 
             }
@@ -70,6 +69,7 @@ public class OctopusScript : MonoBehaviour
     private void OnMouseDown()
     {
         follow = true;
+        pickupNoise.Play();
     }
     private void OnMouseUp()
     {

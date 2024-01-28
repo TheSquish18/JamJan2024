@@ -5,6 +5,8 @@ using UnityEngine;
 public class SacaScript : MonoBehaviour
 {
     private bool follow = false;
+    public AudioSource pickupSound;
+    public AudioSource dropSound;
 
     void Update()
     {
@@ -18,12 +20,18 @@ public class SacaScript : MonoBehaviour
     private void OnMouseDown()
     {
         follow = true;
+        pickupSound.Play();
+
     }
     private void OnMouseUp()
     {
         follow = false;
     }
-    
-    
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        dropSound.Play();
+    }
+
 
 }

@@ -10,6 +10,9 @@ public class GopherScript : MonoBehaviour
     private Vector3 startingPos;
     public GameObject typingBubbleObject;
     private int counter = 0;
+    public AudioSource click;
+    public AudioSource notification;
+    public bool done = false;
 
     void Start()
     {
@@ -44,6 +47,11 @@ public class GopherScript : MonoBehaviour
         {
             SceneManager.LoadScene("Sacabambaspis");
         }
+        if (counter == 3 && done == false)
+        {
+            notification.Play();
+            done = true;
+        }
     }
 
     IEnumerator someTime()
@@ -57,7 +65,14 @@ public class GopherScript : MonoBehaviour
         typingBubbleObject.SetActive(true);
         yield return new WaitForSeconds(2.5f);
         typingBubbleObject.SetActive(false);
+        notification.Play();
     }
 
-
+    private void OnMouseDown()
+    {
+        if (counter == 2)
+        {
+            click.Play();
+        }
+    }
 }
