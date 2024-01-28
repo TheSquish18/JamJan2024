@@ -44,7 +44,7 @@ public class WhaleScript : MonoBehaviour
 
     void Update()
     {
-        if (whalesMoved < 2 && whalesMoved > 0)
+        if (whalesMoved < 5 && whalesMoved > 0)
         {
             if (Random.value < 0.5f)
                 spriteUsing = oWhale;

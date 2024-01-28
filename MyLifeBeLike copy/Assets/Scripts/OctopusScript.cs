@@ -34,9 +34,9 @@ public class OctopusScript : MonoBehaviour
         {
             if (name == tentacleName)
             {
+                dropNoise.Play();
                 if(tentacleChecked == false)
                 {
-                    dropNoise.Play();
                     ConstantStorgae.octopusTentacleCheck++;
                     tentacleChecked = true;
                 }
