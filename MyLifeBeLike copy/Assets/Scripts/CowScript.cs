@@ -14,6 +14,7 @@ public class CowScript : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<BoxCollider2D>().enabled = false;
         StartCoroutine(firstAd());
+        StartCoroutine(countDown());
     }
 
     void Update()
@@ -42,7 +43,7 @@ public class CowScript : MonoBehaviour
         yes += 1;
         if (yes == 3)
         {
-            //SceneManager.LoadScene("??credit sceene i thing");
+            SceneManager.LoadScene("End");
         }
         else
         {
@@ -73,5 +74,11 @@ public class CowScript : MonoBehaviour
     {
         yield return new WaitForSeconds(1.2f);
         if (!grammarlee.isPlaying) { grammarlee.Play(); }
+    }
+
+    IEnumerator countDown()
+    {
+        yield return new WaitForSeconds(60);
+        SceneManager.LoadScene("End");
     }
 }

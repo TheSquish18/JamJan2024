@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 8a37084fe925f5f42bcc4aa8157e6807
+  - enabled: 1
     path: Assets/Scenes/Octopus.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -20,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lobster.unity
     guid: cc0801c0376e243529faba09812e6401
+  - enabled: 1
+    path: Assets/Scenes/Otter.unity
+    guid: f1448e246db6c4bab9a00982df42fbd6
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 756c180046abdab4b93558406470eaf4
   m_configObjects: {}

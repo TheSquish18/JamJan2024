@@ -60,7 +60,7 @@ public class LobsterScript : MonoBehaviour
     IEnumerator win()
     {
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("Gopher");
+        SceneManager.LoadScene("Sacabambaspis");
     }
 
     /*private void OnCollisionEnter2D(Collision2D collision)

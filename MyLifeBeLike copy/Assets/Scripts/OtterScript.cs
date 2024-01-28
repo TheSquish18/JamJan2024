@@ -15,14 +15,14 @@ public class OtterScript : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, speed * Time.deltaTime, 0);
-        speed += Input.mouseScrollDelta.y;
+        speed += Input.mouseScrollDelta.y * 5;
 
     }
 
     IEnumerator nextScene()
     {
         yield return new WaitForSeconds(15);
-        SceneManager.LoadScene("Turtle");
+        SceneManager.LoadScene("Whale");
     }
 
 }

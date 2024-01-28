@@ -6,10 +6,11 @@ public class RoundaboutCorrectScript : MonoBehaviour
 {
     private float speed;
     private bool start = false;
+    public int speedMultiplier = 500;
 
     void Start()
     {
-        speed = Random.value * 670;
+        speed = Random.value * speedMultiplier;
         StartCoroutine(wait());
     }
     void Update()
@@ -22,7 +23,7 @@ public class RoundaboutCorrectScript : MonoBehaviour
 
     IEnumerator wait()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         start = true;
     }
 }
