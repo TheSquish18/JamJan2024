@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
+using UnityEngine.SceneManagement;
 
 public class OctopusScript : MonoBehaviour
 {
@@ -10,10 +12,15 @@ public class OctopusScript : MonoBehaviour
     //public AudioSource sockNoise;
     //public AudioSource errorNoise; ??
     private Vector3 ogPosition;
+    private bool tentacleChecked = false;
+    private bool win = false;
+
+    
 
     void Start()
     {
         ogPosition = transform.position;
+        StartCoroutine(countDown());
     }
 
     void Update()
@@ -28,6 +35,11 @@ public class OctopusScript : MonoBehaviour
             if (name == tentacleName)
             {
                 //sockNoise.Play();
+                if(tentacleChecked == false)
+                {
+                    ConstantStorgae.octopusTentacleCheck++;
+                    tentacleChecked = true;
+                }
             }
             else
             {
@@ -35,6 +47,12 @@ public class OctopusScript : MonoBehaviour
                 transform.position = ogPosition;
 
             }
+        }
+
+        if(ConstantStorgae.octopusTentacleCheck == 7)
+        {
+            win = true;
+            StartCoroutine(winEffect());
         }
     }
 
@@ -56,5 +74,17 @@ public class OctopusScript : MonoBehaviour
     private void OnMouseUp()
     {
         follow = false;
+    }
+
+    IEnumerator winEffect()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("Otter");
+    }
+
+    IEnumerator countDown()
+    {
+        yield return new WaitForSeconds(45);
+        SceneManager.LoadScene("Otter");
     }
 }
