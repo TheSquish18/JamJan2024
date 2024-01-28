@@ -9,9 +9,11 @@ public class LobsterScript : MonoBehaviour
     private Sprite mainSprite;
     private Sprite clickedSprite;
     private Sprite pastaSprite;
-    private bool boiling = false;
+    public bool boiling = false;
     private bool following = true;
     public GameObject pot;
+    public GameObject JustPasta;
+    public bool hasPasta = false;
 
     void Start()
     {
@@ -29,39 +31,51 @@ public class LobsterScript : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, 10);
         }
 
-        if (boiling == false)
-        {
+        //if (boiling == false)
+        //{
             if (Input.GetMouseButton(0))
             {
                 GetComponent<SpriteRenderer>().sprite = clickedSprite;
+                if(!hasPasta){
+                    GameObject newPasta = Instantiate(JustPasta, transform.position, Quaternion.identity);
+                    newPasta.GetComponent<SpriteRenderer>().enabled = true;
+                    hasPasta = true;
+                }
+                
             }
             else
             {
                 GetComponent<SpriteRenderer>().sprite = mainSprite;
             }
-        }
+        //}
     }
 
     IEnumerator heatTheWater()
     {
         boiling = false;
-        yield return new WaitForSeconds(30);
+        yield return new WaitForSeconds(15);
         pot.GetComponent<Animator>().SetBool("boiling", true);
         boiling = true;
     }
     IEnumerator win()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene("Gopher");
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.name == "Pot")
+        if (collision.transform.name == "Pot" && boiling == true)
         {
             GetComponent<SpriteRenderer>().sprite = pastaSprite;
-            following = false;
+            //following = false;
             StartCoroutine(win());
         }
+    }*/
+
+    public void winEffect(){
+        GetComponent<SpriteRenderer>().sprite = pastaSprite;
+        StartCoroutine(win());
     }
+
 }
