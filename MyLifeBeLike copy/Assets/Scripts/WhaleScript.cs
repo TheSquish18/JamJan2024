@@ -105,7 +105,7 @@ public class WhaleScript : MonoBehaviour
 
         if (follow == true)
         {
-            transform.position = new Vector3(transform.position.x + (Input.mousePosition.x-mousePos)/60000, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x + (Input.mousePosition.x-mousePos)/20000, transform.position.y, transform.position.z);
         }
     }
 

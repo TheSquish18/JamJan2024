@@ -202,8 +202,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70211755}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6, y: -0.86, z: 0}
-  m_LocalScale: {x: 2.0299, y: 2.0299, z: 2.0299}
+  m_LocalPosition: {x: -1.7, y: -0.14, z: 0}
+  m_LocalScale: {x: 2.761476, y: 2.761476, z: 2.761476}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -226,7 +226,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.8626703
+  m_Distance: 1.1735097
   m_DampingRatio: 0
   m_Frequency: 1
 --- !u!50 &70211759
@@ -330,8 +330,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472387541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26, y: 0.02000001, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.8302999, y: 1.0571, z: 0}
+  m_LocalScale: {x: 1.3604, y: 1.3604, z: 1.3604}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 902929216}
@@ -646,12 +646,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974208576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.97, y: -0.26, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.48, y: -1.04, z: 0}
+  m_LocalScale: {x: 2.9341, y: 2.9341, z: 2.9341}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &974208579
 Animator:
@@ -774,12 +774,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318643073}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4799999, y: -0.03999999, z: 0}
-  m_LocalScale: {x: 2.1274157, y: 2.1274157, z: 2.1274157}
+  m_LocalPosition: {x: -0.17630005, y: 0.9754999, z: 0}
+  m_LocalScale: {x: 2.8941362, y: 2.8941362, z: 2.8941362}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!231 &1318643076
 SpringJoint2D:
@@ -985,12 +985,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706533779}
   m_LocalRotation: {x: -0, y: -0, z: 0.15370439, w: 0.9881169}
-  m_LocalPosition: {x: -1.11, y: -0.14999998, z: 0}
-  m_LocalScale: {x: 1.9013325, y: 1.9013325, z: 1.9013325}
+  m_LocalPosition: {x: -1.0334, y: 0.8258, z: 0}
+  m_LocalScale: {x: 2.5865726, y: 2.5865726, z: 2.5865726}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 17.683}
 --- !u!231 &1706533782
 SpringJoint2D:
