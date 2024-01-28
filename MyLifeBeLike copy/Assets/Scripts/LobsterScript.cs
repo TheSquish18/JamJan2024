@@ -14,6 +14,7 @@ public class LobsterScript : MonoBehaviour
     public GameObject pot;
     public GameObject JustPasta;
     public bool hasPasta = false;
+    public AudioSource pastaNoise;
 
     void Start()
     {
@@ -41,6 +42,7 @@ public class LobsterScript : MonoBehaviour
                     GameObject newPasta = Instantiate(JustPasta, transform.position, Quaternion.identity);
                     newPasta.GetComponent<SpriteRenderer>().enabled = true;
                     hasPasta = true;
+                    pastaNoise.Play();
                 }
                 
             }
