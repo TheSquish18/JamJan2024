@@ -56,13 +56,13 @@ public class LobsterScript : MonoBehaviour
     IEnumerator heatTheWater()
     {
         boiling = false;
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(10);
         pot.GetComponent<Animator>().SetBool("boiling", true);
         boiling = true;
     }
     IEnumerator win()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene("Gopher");
     }
 

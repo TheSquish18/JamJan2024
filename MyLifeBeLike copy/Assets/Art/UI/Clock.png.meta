@@ -141,10 +141,10 @@ TextureImporter:
       name: Clock_1
       rect:
         serializedVersion: 2
-        x: 464
-        y: 45
-        width: 96
-        height: 283
+        x: 490
+        y: 46
+        width: 70
+        height: 282
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: Clock_2
       rect:
         serializedVersion: 2
-        x: 559
-        y: 93
+        x: 618
+        y: 96
         width: 33
-        height: 183
+        height: 182
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,27 +196,6 @@ TextureImporter:
       bones: []
       spriteID: 3a2ab4ec5885e88448bc824b7177804d
       internalID: -1175071663
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Clock_4
-      rect:
-        serializedVersion: 2
-        x: 490
-        y: 47
-        width: 69
-        height: 86
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2dc31200212a71d4f87c0124c30bbd48
-      internalID: 270193751
       vertices: []
       indices: 
       edges: []

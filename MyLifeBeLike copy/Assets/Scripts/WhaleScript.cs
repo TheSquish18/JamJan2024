@@ -127,7 +127,7 @@ public class WhaleScript : MonoBehaviour
     }
 
     IEnumerator countDown(){
-        yield return new WaitForSeconds(70);
+        yield return new WaitForSeconds(45);
         SceneManager.LoadScene("Lobster");
     }
 }

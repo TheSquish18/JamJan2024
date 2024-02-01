@@ -471,7 +471,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.27, y: 0.68}
+    oldSize: {x: 1.35, y: 1.61}
     newSize: {x: 1.27, y: 0.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -637,7 +637,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.95, y: 1.21}
+    oldSize: {x: 1.27, y: 0.68}
     newSize: {x: 1.95, y: 1.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -992,7 +992,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.13, y: 0.72}
+    oldSize: {x: 1.28, y: 1.08}
     newSize: {x: 1.13, y: 0.72}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1354,11 +1354,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8785386271561812438, guid: b2f6fd9b7977db54b9f5d40706975735, type: 3}
       propertyPath: m_text
-      value: Spin the cycle
+      value: Nothing is infinite but laundry
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785386271561812438, guid: b2f6fd9b7977db54b9f5d40706975735, type: 3}
+      propertyPath: m_margin.x
+      value: -84.75311
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785386271561812438, guid: b2f6fd9b7977db54b9f5d40706975735, type: 3}
+      propertyPath: m_margin.z
+      value: -149.94775
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785386271561812439, guid: b2f6fd9b7977db54b9f5d40706975735, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 8785386271561812439, guid: b2f6fd9b7977db54b9f5d40706975735, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 356
+      value: 339
       objectReference: {fileID: 0}
     - target: {fileID: 8785386271601698305, guid: b2f6fd9b7977db54b9f5d40706975735, type: 3}
       propertyPath: m_text
@@ -1789,7 +1801,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.91, y: 0.84}
+    oldSize: {x: 1.95, y: 1.21}
     newSize: {x: 0.91, y: 0.84}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1948,7 +1960,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.82, y: 0.98}
+    oldSize: {x: 0.91, y: 0.84}
     newSize: {x: 0.82, y: 0.98}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2799,7 +2811,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.35, y: 1.61}
+    oldSize: {x: 1.13, y: 0.72}
     newSize: {x: 1.35, y: 1.61}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3108,7 +3120,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.08}
+    oldSize: {x: 0.82, y: 0.98}
     newSize: {x: 1.28, y: 1.08}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

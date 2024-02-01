@@ -84,7 +84,7 @@ public class OctopusScript : MonoBehaviour
 
     IEnumerator countDown()
     {
-        yield return new WaitForSeconds(45);
+        yield return new WaitForSeconds(30);
         SceneManager.LoadScene("Otter");
     }
 }

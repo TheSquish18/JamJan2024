@@ -15,6 +15,7 @@ public class GopherTMPScript : MonoBehaviour
         StartCoroutine(someTime());
         startingPos = GetComponent<RectTransform>().anchoredPosition;
         startingPos += new Vector2(0, 322);
+        Cursor.visible = true;
     }
 
     void Update()
